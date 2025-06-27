@@ -1,3 +1,3 @@
 print("Hello World")
 
-print("Version like 7: Testing if git push creates a new docker image!")
+print("Version like 8: Live demo")

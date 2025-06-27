@@ -1,10 +1,8 @@
 pipeline {
     agent any
-
     environment {
         IMAGE_NAME = "zhye1104/jenkinsproject"
     }
-
     stages {
         stage('Zhuohan Ye - Build Docker Image') {
             steps {
@@ -13,7 +11,6 @@ pipeline {
                 }
             }
         }
-
         stage('Zhuohan Ye - Login to Dockerhub') {
             steps {
                 script {
@@ -25,7 +22,6 @@ pipeline {
                 }
             }
         }
-
         stage('Zhuohan Ye - Push image to Dockerhub') {
             steps {
                 script {
