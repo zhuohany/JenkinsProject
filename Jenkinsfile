@@ -18,7 +18,7 @@ pipeline {
             steps {
                 script {
                     withCredentials([usernamePassword(credentialsId: 'docker_hub_login', usernameVariable: 'USER', passwordVariable: 'ACCESS')]) {
-                        bat 'echo $ACCESS | docker login -u $USER --password-stdin'
+                        bat '$ACCESS | docker login -u $USER --password-stdin'
                     }
                 }
             }
